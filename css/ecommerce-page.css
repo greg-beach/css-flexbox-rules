@@ -37,9 +37,16 @@ section {
 }
 
 .header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo-search {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  height: 30px;
 }
 
 .logo {
@@ -54,6 +61,9 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .search-bar input {
@@ -71,6 +81,9 @@ section {
 }
 
 .options {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .option {
@@ -87,6 +100,9 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .category {
@@ -111,6 +127,10 @@ section {
 }
 
 .view-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 i.fa-th-list {
@@ -182,15 +202,19 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .grid .product {
   width: 300px;
-  padding-bottom: 30px;
+  padding-bottom: 30px
 }
 
 .grid .product-image-wrapper {
   height: 200px;
+  padding-bottom: 20px;
 }
 
 .grid .product-data {
@@ -200,19 +224,32 @@ i.fa-th-list {
 .grid .product-info {
   text-align: center;
   padding: 0 20px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  gap: 10px;
 }
 
 .grid .product-action {
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: center;
 }
 
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 
 .lines .product {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   padding: 20px;
 }
 
@@ -221,21 +258,32 @@ i.fa-th-list {
   height: 200px;
 }
 
-.lines .product-data {
-}
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 125px;
 }
 
 .lines .product-action {
+  display: flex;
+  align-items: flex-end;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
 
 .lines-action .product {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .lines-action .product-image-wrapper {
@@ -244,13 +292,26 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
+  flex-direction: row;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  gap: 20px;
+  width: 400px;
 }
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
 }

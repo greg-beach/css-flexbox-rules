@@ -27,6 +27,9 @@ p {
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .subtext {
@@ -81,5 +84,24 @@ input[type="submit"]:hover {
 }
 
 .form select {
+  height: 30px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-radio-control label, .form-checkbox-control label {
+  font-weight: normal;
+}
+
+select {
   height: 30px;
 }
